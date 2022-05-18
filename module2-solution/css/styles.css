@@ -1,0 +1,87 @@
+* {
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.75em;
+	margin: 30px;
+}
+
+.menuContainer {
+	margin-left: 16px;
+}
+
+.menuArticle {
+	position: relative;
+	font-size: 1.25em;
+	background-color: #aaaaaa;
+	height: 200px;
+	overflow: hidden;
+	border: 3px solid black;
+}
+
+.articleContainer {
+	padding: 15px;
+	width: 33%;
+	float: left;
+}
+
+#articleTitle {
+	position: absolute;
+	top: -3px;
+	right: -3px;
+	width: 175px;
+}
+
+#articleTitle > p {
+	margin: 0px;
+	font-size: 22px;
+	border: 3px solid black;
+	text-align: center;
+	font-weight: bold;
+	padding: 3px;
+}
+
+#chickenTitle {
+	color: black;
+	background-color: #eeaaaa;
+}
+
+#beefTitle {
+	color: white;
+	background-color: #cc5555;
+}
+
+#porkTitle {
+	color: black;
+	background-color: #ffdc99;
+}
+
+.articleText {
+	margin: 10px;
+	margin-top: 40px;
+}
+
+@media (min-width: 992px) {
+	.articleContainer {
+		width: 33%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.articleContainer {
+		width: 50%;
+	}
+
+	.porkContainer {
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.articleContainer {
+		width:  100%;
+	}
+}
